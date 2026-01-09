@@ -1,1 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#6db3f2, #ffffff);
+  font-family: "Tahoma", sans-serif;
+  overflow: hidden;
+}
+
+/* Desktop icons */
+.icon {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  width: 60px;
+}
+
+.icon span {
+  display: block;
+  font-size: 12px;
+}
+
+/* Windows */
+.window {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 320px;
+  background: #f2f0e6;
+  border: 2px solid #000;
+  display: none;
+}
+
+/* Title bar */
+.title-bar {
+  background: #0055aa;
+  color: white;
+  padding: 5px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-bar button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Window content */
+.content {
+  padding: 10px;
+}
 
