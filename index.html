@@ -2,36 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    a {
-      color: #4da6ff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
+  <title>Miejiken Ian</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <h1>Miejiken Ian</h1>
-    <p>Simple Personal Website</p>
-    <p>
-      <a href="#">GitHub</a> ·
-      <a href="#">Facebook</a> ·
-      <a href="#">Email</a>
-    </p>
+
+  <!-- Desktop Icons -->
+  <div class="icon" onclick="openWindow('about')" style="top:40px;">
+    🧑‍💻<span>About</span>
   </div>
+
+  <div class="icon" onclick="openWindow('work')" style="top:120px;">
+    📁<span>Work</span>
+  </div>
+
+  <div class="icon" onclick="openWindow('contact')" style="top:200px;">
+    ✉️<span>Contact</span>
+  </div>
+
+  <!-- About Window -->
+  <div class="window" id="about">
+    <div class="title-bar">
+      About Me
+      <button onclick="closeWindow('about')">X</button>
+    </div>
+    <div class="content">
+      <h2>Miejiken Ian</h2>
+      <p>Student / Beginner Web Developer</p>
+      <p>I like minimalist and retro desktop-style websites.</p>
+    </div>
+  </div>
+
+  <!-- Work Window -->
+  <div class="window" id="work">
+    <div class="title-bar">
+      My Work
+      <button onclick="closeWindow('work')">X</button>
+    </div>
+    <div class="content">
+      <p>• Portfolio website</p>
+      <p>• School projects</p>
+    </div>
+  </div>
+
+  <!-- Contact Window -->
+  <div class="window" id="contact">
+    <div class="title-bar">
+      Contact
+      <button onclick="closeWindow('contact')">X</button>
+    </div>
+    <div class="content">
+      <p>Email: your@email.com</p>
+      <p>Facebook: fb.com/you</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
