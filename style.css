@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(#6db3f2, #ffffff);
+  background: linear-gradient(#blue, #ffffff);
   font-family: "Tahoma", sans-serif;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@ body {
   position: absolute;
   left: 20px;
   cursor: pointer;
-  color: blue;
+  color: black;
   text-align: center;
   width: 60px;
 }
